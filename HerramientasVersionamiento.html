@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🛠️ Herramientas de Versionamiento</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1><i class="fas fa-code-branch"></i> Herramientas de Versionamiento</h1>
+    <p>Comparativa de las plataformas más populares para control de versiones</p>
+  </div>
+</header>
+
+<main class="container">
+  <section class="filtros">
+    <h2>Filtrar por tipo:</h2>
+    <div class="botones-filtro">
+      <button class="btn active" data-filtro="todas">Todas</button>
+      <button class="btn" data-filtro="centralizado">Centralizado</button>
+      <button class="btn" data-filtro="distribuido">Distribuido</button>
+    </div>
+  </section>
+
+  <section class="herramientas">
+    <!-- Git -->
+    <div class="tarjeta herramienta" data-categoria="distribuido">
+      <div class="icono"><i class="fab fa-git-alt"></i></div>
+      <h3>Git</h3>
+      <div class="detalles">
+        <p><strong>Tipo:</strong> Sistema distribuido</p>
+        <p><strong>Creador:</strong> Linus Torvalds (2005)</p>
+        <p><strong>Ventajas:</strong></p>
+        <ul>
+          <li>Velocidad y eficiencia</li>
+          <li>Trabajo offline</li>
+          <li>Ramificación poderosa</li>
+        </ul>
+        <p><strong>Desventajas:</strong></p>
+        <ul>
+          <li>Curva de aprendizaje</li>
+          <li>Interfaz de línea de comandos</li>
+        </ul>
+      </div>
+      <a href="https://git-scm.com/" target="_blank" class="enlace">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <!-- GitHub -->
+    <div class="tarjeta herramienta" data-categoria="distribuido">
+      <div class="icono"><i class="fab fa-github"></i></div>
+      <h3>GitHub</h3>
+      <div class="detalles">
+        <p><strong>Tipo:</strong> Plataforma Git (distribuido)</p>
+        <p><strong>Creador:</strong> GitHub Inc. (2008)</p>
+        <p><strong>Ventajas:</strong></p>
+        <ul>
+          <li>Comunidad más grande</li>
+          <li>GitHub Actions para CI/CD</li>
+          <li>GitHub Pages</li>
+        </ul>
+        <p><strong>Desventajas:</strong></p>
+        <ul>
+          <li>Limitaciones en plan gratuito</li>
+          <li>Propiedad de Microsoft</li>
+        </ul>
+      </div>
+      <a href="https://github.com" target="_blank" class="enlace">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <!-- GitLab -->
+    <div class="tarjeta herramienta" data-categoria="distribuido">
+      <div class="icono"><i class="fab fa-gitlab"></i></div>
+      <h3>GitLab</h3>
+      <div class="detalles">
+        <p><strong>Tipo:</strong> Plataforma Git (distribuido)</p>
+        <p><strong>Creador:</strong> GitLab Inc. (2011)</p>
+        <p><strong>Ventajas:</strong></p>
+        <ul>
+          <li>CI/CD integrado</li>
+          <li>Autohospedaje posible</li>
+          <li>DevOps completo</li>
+        </ul>
+        <p><strong>Desventajas:</strong></p>
+        <ul>
+          <li>Interfaz compleja</li>
+          <li>Menor comunidad</li>
+        </ul>
+      </div>
+      <a href="https://gitlab.com" target="_blank" class="enlace">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <!-- Subversion (SVN) -->
+    <div class="tarjeta herramienta" data-categoria="centralizado">
+      <div class="icono"><i class="fas fa-database"></i></div>
+      <h3>Subversion (SVN)</h3>
+      <div class="detalles">
+        <p><strong>Tipo:</strong> Sistema centralizado</p>
+        <p><strong>Creador:</strong> CollabNet (2000)</p>
+        <p><strong>Ventajas:</strong></p>
+        <ul>
+          <li>Fácil de entender</li>
+          <li>Control de acceso fino</li>
+          <li>Mejor para binarios</li>
+        </ul>
+        <p><strong>Desventajas:</strong></p>
+        <ul>
+          <li>Requiere conexión constante</li>
+          <li>Ramas menos eficientes</li>
+        </ul>
+      </div>
+      <a href="https://subversion.apache.org/" target="_blank" class="enlace">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <!-- Mercurial -->
+    <div class="tarjeta herramienta" data-categoria="distribuido">
+      <div class="icono"><i class="fas fa-code-merge"></i></div>
+      <h3>Mercurial</h3>
+      <div class="detalles">
+        <p><strong>Tipo:</strong> Sistema distribuido</p>
+        <p><strong>Creador:</strong> Matt Mackall (2005)</p>
+        <p><strong>Ventajas:</strong></p>
+        <ul>
+          <li>Más simple que Git</li>
+          <li>Buen rendimiento</li>
+          <li>Soporte en Bitbucket</li>
+        </ul>
+        <p><strong>Desventajas:</strong></p>
+        <ul>
+          <li>Menos popular</li>
+          <li>Ecosistema más pequeño</li>
+        </ul>
+      </div>
+      <a href="https://www.mercurial-scm.org/" target="_blank" class="enlace">Visitar sitio <i class="fas fa-external-link-alt"></i></a>
+    </div>
+  </section>
+
+  <section class="comparativa">
+    <h2><i class="fas fa-balance-scale"></i> Comparativa Rápida</h2>
+    <div class="tabla-comparativa">
+      <table>
+        <thead>
+        <tr>
+          <th>Herramienta</th>
+          <th>Tipo</th>
+          <th>Lanzamiento</th>
+          <th>Ventaja Principal</th>
+          <th>Desventaja Principal</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Git</td>
+          <td>Distribuido</td>
+          <td>2005</td>
+          <td>Rendimiento</td>
+          <td>Curva de aprendizaje</td>
+        </tr>
+        <tr>
+          <td>GitHub</td>
+          <td>Plataforma Git</td>
+          <td>2008</td>
+          <td>Comunidad</td>
+          <td>Privacidad</td>
+        </tr>
+        <tr>
+          <td>GitLab</td>
+          <td>Plataforma Git</td>
+          <td>2011</td>
+          <td>DevOps completo</td>
+          <td>Complejidad</td>
+        </tr>
+        <tr>
+          <td>SVN</td>
+          <td>Centralizado</td>
+          <td>2000</td>
+          <td>Simplicidad</td>
+          <td>Requiere servidor</td>
+        </tr>
+        <tr>
+          <td>Mercurial</td>
+          <td>Distribuido</td>
+          <td>2005</td>
+          <td>Facilidad de uso</td>
+          <td>Menos popular</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>© 2024 - Comparativa de Herramientas de Versionamiento | Creado con <i class="fas fa-heart"></i> para desarrolladores</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

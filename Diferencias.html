@@ -1,71 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Web</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #4285f4;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    footer {
-      background-color: #f1f1f1;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <title>🚀 Git: Versionamiento Local vs Remoto</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-  <h1>Bienvenido a Mi Sitio Web</h1>
-  <nav>
-    <a href="#">Inicio</a> |
-    <a href="#">Acerca de</a> |
-    <a href="#">Servicios</a> |
-    <a href="#">Contacto</a>
-  </nav>
+  <h1>🚀 Git: Versionamiento Local vs Remoto</h1>
+  <p>Entiende las diferencias clave y cómo interactúan</p>
 </header>
 
 <main>
-  <section>
-    <h2>Sección Principal</h2>
-    <p>Este es un párrafo de ejemplo. Aquí puedes colocar la información principal de tu página web.</p>
+  <section class="comparison">
+    <div class="card local">
+      <h2>🔧 Versionamiento Local</h2>
+      <div class="content">
+        <ul>
+          <li><strong>Se ejecuta en tu máquina</strong> (sin necesidad de internet).</li>
+          <li><strong>Comandos principales</strong>:
+            <code>git init</code>,
+            <code>git add</code>,
+            <code>git commit</code>.
+          </li>
+          <li><strong>Ventajas</strong>:
+            <ul>
+              <li>Rápido (no depende de servidores externos). ⚡</li>
+              <li>Trabajo offline posible. 📴</li>
+              <li>Control total de tu historial. 🛠️</li>
+            </ul>
+          </li>
+          <li><strong>Limitaciones</strong>:
+            <ul>
+              <li>No permite colaboración. 👥❌</li>
+              <li>Riesgo de perder datos si falla tu disco duro. 💾⚠️</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-    <article>
-      <h3>Artículo de Muestra</h3>
-      <p>Este es un artículo de ejemplo dentro de la sección principal. Puedes usar artículos para contenido independiente.</p>
-    </article>
+    <div class="card remote">
+      <h2>☁️ Versionamiento Remoto</h2>
+      <div class="content">
+        <ul>
+          <li><strong>Almacena el repositorio en servidores externos</strong> (GitHub, GitLab, Bitbucket).</li>
+          <li><strong>Comandos principales</strong>:
+            <code>git clone</code>,
+            <code>git push</code>,
+            <code>git pull</code>.
+          </li>
+          <li><strong>Ventajas</strong>:
+            <ul>
+              <li>Colaboración en equipo. 👥✅</li>
+              <li>Backup automático del código. 🗄️</li>
+              <li>Integración con CI/CD. 🔄</li>
+            </ul>
+          </li>
+          <li><strong>Limitaciones</strong>:
+            <ul>
+              <li>Requiere conexión a internet. 🌐❌</li>
+              <li>Dependencia del servicio externo. ⏳</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Segunda Sección</h2>
-    <p>Esta es otra sección con contenido diferente.</p>
-    <ul>
-      <li>Elemento de lista 1</li>
-      <li>Elemento de lista 2</li>
-      <li>Elemento de lista 3</li>
-    </ul>
+  <section class="workflow">
+    <h2>🔗 Flujo de Trabajo Combinado</h2>
+    <div class="diagram">
+      <div class="step">
+        <span>1</span>
+        <p>Cambios locales (<code>git add</code> + <code>git commit</code>)</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step">
+        <span>2</span>
+        <p>Subir a remoto (<code>git push</code>)</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step">
+        <span>3</span>
+        <p>Colaboradores actualizan (<code>git pull</code>)</p>
+      </div>
+    </div>
+    <p class="note">✨ Git sincroniza ambos entornos para mantener un historial consistente.</p>
   </section>
 </main>
 
 <footer>
-  <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+  <p>© 2024 - Aprendiendo Git | Hecho con ❤️ para devs</p>
 </footer>
 </body>
 </html>
